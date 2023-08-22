@@ -9,7 +9,7 @@ export const categoriesSlice = createSlice({
     checkStatus: (state, action) => {
       state.categories = action.payload === 'Under construction'
         ? 'Under construction'
-        : state.categories;
+        : state;
     },
   },
 });
