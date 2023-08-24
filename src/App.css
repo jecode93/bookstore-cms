@@ -24,7 +24,7 @@ hr {
 input::placeholder {
   font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
-  color: #c4c4c4
+  color: #c4c4c4;
 }
 
 select {
