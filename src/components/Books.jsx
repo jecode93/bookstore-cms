@@ -15,7 +15,6 @@ export default function Book() {
   }, [books, dispatch]);
 
   if (isLoading) return <div>Loading...</div>;
-  // if (error) return <div>Error</div>;
 
   return (
     <>

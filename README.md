@@ -16,7 +16,6 @@
 	- [💻 Getting Started ](#-getting-started-)
 		- [Prerequisites](#prerequisites)
 		- [Setup](#setup)
-	- [🚀 Live Demo ](#-live-demo-)
 	- [👥 Authors ](#-authors-)
 	- [🔭 Future Features ](#-future-features-)
 	- [🤝 Contributing ](#-contributing-)
