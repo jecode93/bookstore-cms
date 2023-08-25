@@ -5,8 +5,7 @@ import AddBook from './addBook';
 import { fetchBook } from '../redux/books/booksSlice';
 
 export default function Book() {
-  const { books } = useSelector((state) => state.books);
-  const { isLoading } = useSelector((state) => state.books.isLoading);
+  const { books, isLoading } = useSelector((state) => state.books);
 
   const dispatch = useDispatch();
 
@@ -14,7 +13,7 @@ export default function Book() {
     dispatch(fetchBook());
   }, [books, dispatch]);
 
-  if (isLoading) return <div>Loading...</div>;
+  if (isLoading) return <div className="isLoading">Loading...</div>;
 
   return (
     <>

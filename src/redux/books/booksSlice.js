@@ -5,7 +5,7 @@ const url = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstor
 const appId = '5k0uBLMEGPJdWJ7OqK54';
 
 const initialState = {
-  isLoading: false,
+  isLoading: true,
   books: [],
   error: null,
 };
@@ -52,9 +52,6 @@ export const booksSlice = createSlice({
   },
   extraReducers: (builder) => {
     builder
-      .addCase(fetchBook.pending, (state) => {
-        state.isLoading = true;
-      })
       .addCase(fetchBook.fulfilled, (state, action) => {
         const newState = { ...state, isLoading: false };
         const resObject = action.payload;
